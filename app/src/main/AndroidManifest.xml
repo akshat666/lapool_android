@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.troofy.hopordrop"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:name=".application.ApplicationVariables"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- THIS IS DEV SETTING -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDBVS-POFflhCldqQzk4g86qo3r56toBxA" />
+
+        <!--
+        THIS IS STAGING SETTING
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAQEpTZJcrvDVgCoX0pOz7WK3nPIWJHgBM" /> -->
+
+
+
+        <!--
+        THIS IS PRODUCTION SETTINGS
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD9Bpwpwufd18jJhMj0Kg1JJ4AYwNC1d4A" />
+        -->
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- This is stop the default activity from starting on notification tap -->
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:clearTaskOnLaunch="true"
+            android:label="@string/app_name_short"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/app_name_short">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PoolMainActivity"
+            android:icon="@drawable/abc_btn_check_to_on_mtrl_015"
+            android:label="@string/title_activity_pool_main"
+            android:launchMode="singleInstance"
+            android:logo="@mipmap/icon"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.octo.android.robospice.Jackson2GoogleHttpClientSpiceService"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.ErrorActivity"
+            android:label="@string/title_activity_error"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AskRideActivity"
+            android:label="@string/title_activity_ask_ride"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.troofy.hopordrop.activity.PoolMainActivity" />
+        </activity>
+
+        <!-- Push notification -->
+        <!-- <receiver -->
+        <!-- android:name=".receiver.OneSignalBroadcastReceiver" -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.onesignal.BackgroundBroadcast.RECEIVE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <service
+            android:name=".service.OneSignalNotificationExtenderService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.UserDetailActivity"
+            android:label="@string/title_activity_user_detail_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PickUpConfirmationActivity"
+            android:label="@string/title_activity_pick_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PickUpDetailsActivity"
+            android:label="@string/title_activity_pick_up_details"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TripActivity"
+            android:label="@string/title_activity_trip"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".receiver.AlarmReceiver"
+            android:process=":remote" />
+
+        <!-- Will not be called unless the application explicitly enables it -->
+        <receiver
+            android:name=".receiver.BootReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.AlarmService" />
+
+        <activity
+            android:name=".activity.GiveDropActivity"
+            android:label="@string/title_activity_give_ride"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.troofy.hopordrop.activity.PoolMainActivity" />
+        </activity>
+        <activity
+            android:name="com.facebook.accountkit.ui.AccountKitActivity"
+            android:theme="@style/AppLoginTheme"
+            tools:replace="android:theme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/ak_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.EmergencyContactActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/emer_contact"/>
+        <activity android:name=".activity.PathActivity"
+            android:label="@string/paths"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

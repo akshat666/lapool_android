@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*************************************************************************
+  ~  *
+  ~  * TROOFY LABS - CONFIDENTIAL
+  ~  * __________________
+  ~  *  Copyright (c) 2016.
+  ~  *
+  ~  *  All Rights Reserved.
+  ~  *
+  ~  * NOTICE:  All information contained herein is, and remains
+  ~  * the property of Troofy Labs(OPC) Private Limited and its suppliers,
+  ~  * if any.  The intellectual and technical concepts contained
+  ~  * herein are proprietary to Troofy Labs(OPC) Private Limited
+  ~  * and its suppliers and may be covered by U.S. and Foreign Patents,
+  ~  * patents in process, and are protected by trade secret or copyright law.
+  ~  * Dissemination of this information or reproduction of this material
+  ~  * is strictly forbidden unless prior written permission is obtained
+  ~  * from Troofy Labs(OPC) Private Limited.
+  ~  */
+  -->
+
+<resources>
+    <string-array name="main_tips">
+        <item>Share rides with your friends</item>
+        <item>Women can travel with women passengers</item>
+        <item>Family can track your trip</item>
+        <item>SOS feature integrated</item>
+    </string-array>
+</resources>

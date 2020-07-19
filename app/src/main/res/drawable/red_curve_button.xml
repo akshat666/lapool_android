@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*************************************************************************
+  ~  *
+  ~  * TROOFY LABS - CONFIDENTIAL
+  ~  * __________________
+  ~  *  Copyright (c) 2016.
+  ~  *
+  ~  *  All Rights Reserved.
+  ~  *
+  ~  * NOTICE:  All information contained herein is, and remains
+  ~  * the property of Troofy Labs(OPC) Private Limited and its suppliers,
+  ~  * if any.  The intellectual and technical concepts contained
+  ~  * herein are proprietary to Troofy Labs(OPC) Private Limited
+  ~  * and its suppliers and may be covered by U.S. and Foreign Patents,
+  ~  * patents in process, and are protected by trade secret or copyright law.
+  ~  * Dissemination of this information or reproduction of this material
+  ~  * is strictly forbidden unless prior written permission is obtained
+  ~  * from Troofy Labs(OPC) Private Limited.
+  ~  */
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="3dip" />
+            <stroke android:width="1dip" android:color="#ad1f1f" />
+            <gradient android:angle="-90" android:startColor="#af2b2b" android:endColor="#ff2b2b"  />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle"  >
+            <corners android:radius="3dip" />
+            <stroke android:width="1dip" android:color="#5e7974" />
+            <solid android:color="#58857e"/>
+        </shape>
+    </item>
+    <item >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="3dip" />
+            <stroke android:width="1dip" android:color="#aa1d1d" />
+            <gradient android:angle="-90" android:startColor="#ff0f0f" android:endColor="#d60808" />
+        </shape>
+    </item>
+</selector>

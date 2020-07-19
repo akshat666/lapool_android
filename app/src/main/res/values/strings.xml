@@ -1,0 +1,474 @@
+<!--
+  ~ /*************************************************************************
+  ~  *
+  ~  * TROOFY LABS - CONFIDENTIAL
+  ~  * __________________
+  ~  *  Copyright (c) 2016.
+  ~  *
+  ~  *  All Rights Reserved.
+  ~  *
+  ~  * NOTICE:  All information contained herein is, and remains
+  ~  * the property of Troofy Labs(OPC) Private Limited and its suppliers,
+  ~  * if any.  The intellectual and technical concepts contained
+  ~  * herein are proprietary to Troofy Labs(OPC) Private Limited-
+  ~  * and its suppliers and may be covered by U.S. and Foreign Patents,
+  ~  * patents in process, and are protected by trade secret or copyright law.
+  ~  * Dissemination of this information or reproduction of this material
+  ~  * is strictly forbidden unless prior written permission is obtained
+  ~  * from Troofy Labs(OPC) Private Limited.
+  ~  */
+  -->
+
+<resources>
+    <string name="app_name">HOP OR DROP</string>
+
+    <!--  THIS IS DEV FACEBOOK ID -->
+    <string name="facebook_app_id">1789979874549658</string>
+
+    <!-- DEV ACCOUNT KIT DETAILS -->
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">7e395ab6c3a6753cae870eb261efdf69</string>
+    <string name="ak_login_protocol_scheme">ak1789979874549658</string>
+
+    <!--  THIS IS DEV STR -->
+    <string name="BASE_SERVICE_URL">http://192.168.0.8:8080/services/</string>
+    <string name="TRACK_URL">http://192.173.2.23/pages/troofy/t/t.xhtml</string>
+    <string name="ALERT_URL">http://192.173.2.23/pages/troofy/a/a.xhtml</string>
+
+
+    <!-- STAGING FACEBOOK ID
+    <string name="facebook_app_id">121970894922121</string>-->
+    <!-- STAGING ACCOUNT KIT DETAILS
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">2a1921fdc17a8211b6f23f4537090158</string>
+    <string name="ak_login_protocol_scheme">ak121970894922121</string> -->
+
+    <!--  THIS IS STAGING STR
+    <string name="BASE_SERVICE_URL">http://128.199.241.180/services/</string>
+    <string name="TRACK_URL">http://128.199.241.180/pages/troofy/t/t.xhtml</string>
+    <string name="ALERT_URL">http://128.199.241.180/pages/troofy/a/a.xhtml</string>-->
+
+    <!--  THIS IS PRODUCTION FACEBOOK ID
+    <string name="facebook_app_id">1533500356945920</string> -->
+
+    <!-- PRODUCTION ACCOUNT KIT DETAILS
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">9e256cb220ae3b7af8f7837eadac480c</string>
+    <string name="ak_login_protocol_scheme">ak1533500356945920</string>-->
+
+    <!--  THIS IS PRODUCTION STR
+    <string name="BASE_SERVICE_URL">http://www.hopordrop.com/services/</string>
+    <string name="TRACK_URL">http://www.hopordrop.com/pages/troofy/t/t.xhtml</string>
+    <string name="ALERT_URL">http://www.hopordrop.com/pages/troofy/a/a.xhtml</string>-->
+
+    <string name="welcome">WELCOME!</string>
+    <string name="title_activity_pool_main">HOP OR DROP</string>
+
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    <string name="no_network_msg">Oops! Please check your internet.</string>
+    <string name="try_again">Try again</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_network">No network</string>
+    <string name="logout">Logout</string>
+    <string name="defaultAppPref">com.troofy.hopordrop.defaultPref</string>
+
+    <string name="USER_FB_LOGIN_SAVE_URL">user/fblogin/save</string>
+    <string name="PICKUP_REQUEST_URL">pool/pickuprequest</string>
+    <string name="PICKUP_REQUEST_LIST_URL">pool/pickuprequest/list</string>
+    <string name="CONFIRM_TRIP_URL">pool/pickuprequest/confirm</string>
+    <string name="SAVE_VERIFY_EMAIL_URL">network/channel/verifyemail</string>
+    <string name="GET_TRIP_DETAILS">pool/trip/fetch</string>
+    <string name="GET_USER_CHANNEL_DETAILS">network/channel/details</string>
+    <string name="CANCEL_PICKUPREQUEST">pool/pickuprequest/cancel</string>
+    <string name="CANCEL_TRIP">pool/trip/cancel</string>
+    <string name="UPDATE_LOCATION">user/location/update</string>
+    <string name="TRIP_UPDATE_LOCATION">pool/trip/location/update</string>
+    <string name="ALERT_UPDATE_LOCATION">pool/alert/location/update</string>
+    <string name="POST_MSG">user/message/post</string>
+    <string name="GET_MSG">user/message/get</string>
+    <string name="CHECK_USER_IN_SYSTEM">user/exists</string>
+    <string name="SAVE_ALERT">pool/trip/alert/save</string>
+    <string name="FB_TOKEN_UPDATE_URL">user/fblogin/update</string>
+    <string name="PICKREQ_REQUEST">pool/pickuprequest/fetch</string>
+    <string name="USER_STATUS">user/current/status</string>
+    <string name="MUTUAL_CONN">user/mutual/connections</string>
+    <string name="SAVE_PATH">pool/path/save</string>
+    <string name="FETCH_PATH_LIST">pool/path/list/fetch</string>
+    <string name="DELETE_PATH">pool/path/delete</string>
+
+    <string name="title_activity_error">Oops!</string>
+    <string name="title_activity_ask_ride">REQUEST A HOP!</string>
+    <string name="title_activity_give_ride">HOP requests near you...</string>
+
+    <string name="drop">Drop:</string>
+    <string name="enter_dest">Enter Destination</string>
+    <string name="title_activity_user_detail_activity">CONFIRM DETAILS!</string>
+    <string name="title_activity_pick_details">Confirm Drop</string>
+
+    <string name="dateTimeFormat">MMM d, h:mm a</string>
+    <string name="requestedAt">Requested on</string>
+    <string name="title_activity_pick_up_details">HOP REQUESTED!</string>
+    <string name="title_activity_trip">Trip is running</string>
+    <string name="title_activity_chat">Chat</string>
+    <string name="save">Save</string>
+    <string name="hopExpired">HOP Request Expired!</string>
+
+    <string name="pickIdStr">pickID</string>
+    <string name="tripIdStr">tripID</string>
+    <string name="pickReqTime">pickReqTime</string>
+    <string name="pickAddressStr">pickAddress</string>
+    <string name="dropAddressStr">dropAddress</string>
+    <string name="pickLatStr">pickLat</string>
+    <string name="pickLngStr">pickLng</string>
+    <string name="dropLatStr">dropLat</string>
+    <string name="dropLngStr">dropLng</string>
+
+    <string name="shareTitle">\nHey! Check the coolest ride sharing app. It is real-time, simple and powerful.\n\n</string>
+    <string name="marketAppURL">https://play.google.com/store/apps/details?id=com.troofy.hopordrop</string>
+
+    <string name="termsLink">&lt;a href=http://www.hopordrop.com/pages/troofy/terms/terms.xhtml&gt;Terms&lt;/a&gt;</string>
+    <string name="policyLink">&lt;a href=http://www.hopordrop.com/pages/troofy/privacy/privacy.xhtml&gt;Policies&lt;/a&gt;</string>
+    <string name="mainLink">&lt;a href=http://www.hopordrop.com&gt;www.hopordrop.com&lt;/a&gt;</string>
+    <string name="faqLink">&lt;a href=http://www.hopordrop.com/pages/troofy/faq/faq.xhtml&gt;FAQs&lt;/a&gt;</string>
+
+    <string name="token">token</string>
+    <string name="chatAuthIDStr">chatAuthID</string>
+    <string name="chatNameStr">chatName</string>
+    <string name="gps_network_not_enabled">Location Service is not enabled</string>
+    <string name="open_location_settings">Enable Location</string>
+    <string name="app_name_short">HopOrDrop</string>
+    <string name="expire_after_15_mins">[HOP request will auto expire after 15 mins]</string>
+    <string name="notify_hop_msg">We will notify you once your HOP is accepted.</string>
+    <string name="loading_data">Loading HOP requests near you...</string>
+    <string name="more_info">For more information visit </string>
+    <string name="no_hop_reqs">No HOP requests available</string>
+    <string name="noty_count">noty_count</string>
+    <string name="share_txt">Take advantage of our features, invite your friends.</string>
+    <string name="tap_to_share">[ TAP TO SHARE ]</string>
+    <string name="share_using">Share using...</string>
+    <string name="problem_cancel_hop">Problem in cancelling HOP. Try again.</string>
+    <string name="hop_cancelled">HOP cancelled!</string>
+    <string name="request_a_hop">REQUEST  A  HOP</string>
+    <string name="tag_line">JUST TAG ALONG</string>
+    <string name="err_generic_msg">Something went wrong.</string>
+    <string name="contact1">Contact 1</string>
+    <string name="contact2">Contact 2</string>
+    <string name="contactname1">contactName1</string>
+    <string name="contactnumber1">contactNumber1</string>
+    <string name="contactname2">contactName2</string>
+    <string name="contactnumber2">contactNumber2</string>
+    <string name="emgAlert">Emergency SOS!</string>
+    <string name="tripLocationPoll">isTripLocationPollSet</string>
+    <string name="alertLocationPoll">isAlertLocationPollSet</string>
+    <string name="tripEnded">Trip ended!</string>
+    <string name="tripKeyStr">tripKey</string>
+    <string name="trackTxt">Please track my trip at &#160;</string>
+    <string name="alertSent">Alert SOS Sent!</string>
+    <string name="smsFail">SMS failed, please try again!</string>
+    <string name="tapToAddEmgCont">Tap to add - Emergency contact</string>
+    <string name="processTrip">Processing trip</string>
+    <string name="wait">Please wait...</string>
+    <string name="endingTrip">Ending your Trip</string>
+    <string name="sendSOS">Send SOS emergency SMS to your contacts?\n(Service charges might be applied)</string>
+    <string name="isAlertOn">isAlertOn</string>
+    <string name="shareTrackTrip">Sharing my trip details! &#160;</string>
+    <string name="alertSMSTxt">"Help me!My location "</string>
+    <string name="sos_sent">SOS Sent!</string>
+    <string name="alertID">alertID</string>
+    <string name="alertCount" />
+
+
+    <string-array name="CountryCodes">
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>672,AQ</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>39,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
+    <string name="title_activity_give_drop">GiveDropActivity</string>
+    <string name="visibleToWomen">Request will be visible to women only</string>
+    <string name="openToPublic">Request is open to public</string>
+    <string name="reqOpenToNwOnly">Request is only visible to your networks</string>
+    <string name="publicStr">Public</string>
+    <string name="networkStr">Network</string>
+    <string name="oops_something_is_missing">Oops! Something is missing</string>
+    <string name="internet_connection_is_down_or_slow">- Internet connection is down or slow</string>
+    <string name="invalid_input_entered">- Invalid input entered</string>
+    <string name="server_is_under_maintenance">- Server is under maintenance</string>
+    <string name="sorry_for_the_inconvenience">Sorry for the inconvenience.</string>
+    <string name="a_product_by_troofy_labs">A product by Troofy Labs</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="email">Email</string>
+    <string name="full_name">Full name</string>
+    <string name="finishReg">Finishing registration</string>
+    <string name="detailsUpdatedLoginAgain">Login again as credentials have changed</string>
+    <string name="next">N E X T</string>
+    <string name="authIDStr">authID</string>
+    <string name="checking_registration">Checking registration</string>
+
+    <string name="cancelilng_hop">Cancelling your HOP</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="location_perm_denied">Permission denied to read your Location</string>
+    <string name="only_women_pref">Only women can select this preference</string>
+    <string name="beta">[ BETA ]</string>
+
+    <plurals name="request">
+        <item quantity="one">Request</item>
+        <item quantity="other">Requests</item>
+    </plurals>
+    <string name="me">Me</string>
+    <string name="chat_with">Chat with</string>
+    <string name="max_chat_chars">200 chars max</string>
+    <string name="preparing_hop">Preparing your HOP</string>
+    <string name="user_flag_support">User is flagged. Contact support.</string>
+    <string name="trip_ended_by_user">Trip already ended by user!</string>
+    <string name="location_unavailable_settings">Location data unavailable. Enable location in settings.</string>
+    <string name="login_btn_info">HOP OR DROP searches your social network for friends who can share rides with you. We will not post anything to your facebook account.</string>
+    <string name="fb">[Facebook]</string>
+    <string name="home">Home</string>
+    <string name="network">Network</string>
+    <string name="share">Share</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="end_trip">END TRIP</string>
+    <string name="trip_ending_err">Error ending trip. Check network settings.</string>
+    <string name="destination">Destination</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="public_brac">[ Public ]</string>
+    <string name="mutual_friends">MUTUAL FRIENDS</string>
+    <string name="back_to_trip"><![CDATA[<< Back to TRIP]]></string>
+    <string name="enter_valid_mobile">Please enter a valid Mobile Number</string>
+    <string name="enter_valid_email">Please enter a valid email ID</string>
+    <string name="enter_digits_countrycode">Please enter only digits for Country Code</string>
+    <string name="load_mutual_friends">Loading mutual friends ...</string>
+    <string name="no_mutual_friends">No mutual friends</string>
+    <string name="shareTxtLine2">And watch our algorithms will do the magic!</string>
+    <string name="enter_start_point">Enter Start Point</string>
+    <string name="time">Time</string>
+    <string name="enter_address">Enter a valid address.</string>
+    <string name="select_day_time">Select at least a day and time.</string>
+    <string name="add_path">ADD YOUR FIXED PATH!</string>
+    <string name="remove_contact_confirm">Do you want to remove the contact?</string>
+    <plurals name="seats">
+        <item quantity="one">seat</item>
+        <item quantity="other">seats</item>
+    </plurals>
+    <string name="emer_contact">Emergency Contacts</string>
+    <string name="paths">PATHS</string>
+    <string name="long_press_delete">Long press for delete</string>
+    <string name="no_paths">No PATHS found</string>
+    <string name="path_deleted">PATH deleted!</string>
+    <string name="cancel_hop">Cancel HOP request?</string>
+    <string name="create_hop_request">Create HOP request</string>
+    <string name="potential_droppers">Potential droppers</string>
+    <string name="invite">INVITE</string>
+    <string name="invite_dlg_title">No friends around...</string>
+    <string name="your_friends_are_not_using_hop_or_drop">We couldn\'t find your friends near you.</string>
+    <string name="fix_this_problem">What you can do :-</string>
+    <string name="_1_invite_friends_and_watch_the_magic">1. Invite more friends</string>
+    <string name="or">OR</string>
+    <string name="_2_make_your_hop_requests_as_public">2. Make your HOP request public</string>
+    <string name="pickup_point">Pickup Point</string>
+
+
+</resources>

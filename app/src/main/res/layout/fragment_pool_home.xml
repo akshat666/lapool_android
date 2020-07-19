@@ -1,0 +1,146 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.troofy.hopordrop.frag.PoolHomeFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="left|top"
+        android:weightSum="1"
+        android:layout_weight="9">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:id="@+id/askRideBtn"
+            android:background="@drawable/selector"
+            android:weightSum="1">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/greenlogo"
+                android:id="@+id/hopLogo"
+                android:layout_marginTop="100dp"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/base" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="HOP"
+                android:layout_marginTop="15dp"
+                android:scrollHorizontally="false"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/base"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="[ Ask a ride ]"
+                android:textStyle="bold"
+                android:layout_marginTop="60dp"
+                android:scrollHorizontally="false"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/base"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:id="@+id/giveRideBtn"
+            android:background="@drawable/black_selector"
+            >
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:text="DROP"
+                android:layout_marginTop="100dp"
+                android:id="@+id/dropLogo"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/yellowlogo"
+                android:tint="@color/white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="DROP"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:scrollHorizontally="false"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="[ Give a ride ]"
+                android:textStyle="bold"
+                android:layout_marginTop="60dp"
+                android:scrollHorizontally="false"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:background="@android:color/transparent" />
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="12"
+            android:background="?attr/colorControlActivated">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_height="match_parent"
+                android:layout_weight="11"
+                android:gravity="center|left"
+                android:textColor="@color/black"
+                android:id="@+id/tipsTxt"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarTheme">@style/MyApp.ActionBarTheme</item>
+        <item name="android:homeAsUpIndicator">@drawable/backicon</item>
+        <item name="homeAsUpIndicator">@drawable/backicon</item>
+
+    </style>
+
+    <!-- Action Bar Styles -->
+    <style name="MyActionBarStyle" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="background">@color/white</item>
+        <item name="android:titleTextStyle">@style/MyAppTitleText</item>
+        <item name="titleTextStyle">@style/MyAppTitleText</item>
+    </style>
+
+    <style name="MyAppTitleText" parent="@style/AppTheme">
+        <item name="android:textColor">@color/base</item>
+    </style>
+
+    <style name="MyApp.ActionBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- THIS is where you can color the arrow! -->
+        <item name="colorControlNormal">@color/black</item>
+    </style>
+
+    <style name="AppLoginTheme" parent="Theme.AccountKit" >
+        <item name="com_accountkit_primary_color">@color/base</item>
+        <item name="com_accountkit_primary_text_color">@android:color/white</item>
+        <item name="com_accountkit_secondary_text_color">@color/base</item>
+        <item name="com_accountkit_status_bar_color">@color/base</item>
+        <item name="com_accountkit_input_accent_color">?attr/com_accountkit_primary_color</item>
+        <item name="com_accountkit_input_border_color">?attr/com_accountkit_primary_color</item>
+    </style>
+
+
+
+</resources>

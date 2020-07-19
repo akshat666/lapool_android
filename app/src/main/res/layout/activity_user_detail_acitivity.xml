@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:background="@color/white"
+    tools:context="com.troofy.hopordrop.activity.UserDetailActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="5"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/left_margin"
+    android:layout_marginRight="@dimen/right_margin"
+    android:layout_marginTop="@dimen/top_margin"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/ic_account_circle_black_36dp" />
+
+        <EditText
+            android:id="@+id/namefld"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="100"
+            android:ems="100"
+            android:backgroundTint="@color/hint"
+            android:textColor="@color/base"
+            android:inputType="textPersonName"
+            android:hint="@string/full_name"
+            android:textColorHint="@color/hint"
+            android:layout_marginLeft="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:src="@drawable/ic_email_black_36dp" />
+
+        <EditText
+            android:id="@+id/emailfld"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namefld"
+            android:ems="100"
+            android:maxLength="100"
+            android:textColor="@color/base"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="15dp"
+            android:textColorHint="@color/hint"
+            android:hint="@string/email" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            android:src="@drawable/ic_phone_iphone_black_36dp"
+     />
+
+
+        <EditText
+            android:id="@+id/countryCodeFld"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/base"
+            android:layout_marginLeft="15dp"
+            android:enabled="true"
+            android:hint="00"
+            android:inputType="number"
+            android:textColorHint="@color/hint"
+            android:maxEms="3"
+            android:maxLength="4"
+          />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/base"
+            android:layout_marginLeft="0dp"
+            android:text=" - "
+
+            />
+
+        <EditText
+            android:id="@+id/phonefld"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="100"
+            android:textColor="@color/base"
+            android:inputType="phone"
+            android:hint="Mobile"
+            android:maxLength="15"
+            android:textColorHint="@color/hint"
+            android:layout_marginLeft="0dp"
+       />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/femaleBtn"
+            android:src="@drawable/female"
+            android:clickable="true"
+            android:background="@color/white" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/maleBtn"
+            android:src="@drawable/male"
+            android:clickable="true"
+            android:layout_marginLeft="36dp"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dobIcon"
+            android:src="@drawable/ic_today_black_36dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="18"
+            android:clickable="true"
+            android:id="@+id/bdayfld"
+            android:textColor="@color/base"
+            android:layout_marginLeft="15dp"
+            android:hint="@string/date_of_birth"
+            android:textSize="18sp"
+            android:textColorHint="@color/hint" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:longClickable="false"
+            android:background="@drawable/green_curve_button"
+            android:text="@string/next"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</LinearLayout>
